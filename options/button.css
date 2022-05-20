@@ -1,0 +1,46 @@
+body{
+    scrollbar-width: none; /* Firefox */
+}
+#buttonDiv{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+::-webkit-scrollbar {display: none; /* Chrome Safari */}
+#contextMenuContainer{
+    max-width: 200px;
+    height: 250px;
+    border: 1px solid wheat;
+    border-radius: 5%;
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+#contextMenuContainer > div{
+    width: 100%;
+    margin: 0 5px 0 0;
+    padding-left: 2px;
+    color: gray;
+    background-color: transparent;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid wheat;
+}
+
+#contextMenuContainer > div:hover{
+    background-color: rgba(200,150,200,0.3);
+    cursor: pointer;
+}
+
+#contextMenuContainer > div.active{
+    color: honeydew;
+    background-color: rgb(99, 72, 255);
+    border-bottom: 1px solid honeydew;
+}
